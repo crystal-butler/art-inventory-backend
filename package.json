@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Crystal Butler",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.12.1"
+  }
 }
