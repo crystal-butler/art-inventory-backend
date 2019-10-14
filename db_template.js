@@ -4,7 +4,7 @@
         id: 1,
         name: 'Bubbles',
         price: 0,
-        image: '/assets/images/bubbles.jpg',
+        image: 'assets/images/bubbles.jpg',
         artist: 'Ray Ceasar',
         gallery: 'Roq La Rue',
         yearmade: 2003,
