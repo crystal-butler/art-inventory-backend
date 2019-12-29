@@ -17,6 +17,7 @@ app.get('/', (request, response) => {
     response.json({ info: 'Node.js, Express and Postgres API' });
 });
 app.get('/arts', db.getArt);
+app.get('/arts/search/:name', db.searchArt);
 app.get('/arts/:id', db.getArtByID);
 app.post('/arts', db.createArt);
 app.put('/arts/:id', db.updateArt);
