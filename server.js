@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import express from 'express';
 import bodyParser from 'body-parser';
 const db = require('./queries');

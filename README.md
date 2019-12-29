@@ -1,8 +1,8 @@
-The backend of this application is based on the tutorials at:
+# The backend of this application is based on the tutorial at
 
-https://medium.com/@micklynch_6905/angular-6-a-simple-web-application-with-node-and-postgresql-ee2a562887d6
+<https://blog.logrocket.com/setting-up-a-restful-api-with-node-js-and-postgresql-d96d6fc892d8/>
 
-https://blog.logrocket.com/setting-up-a-restful-api-with-node-js-and-postgresql-d96d6fc892d8/
+## Working with postgres
 
 Check to see if postgres is running by executing:
 `pg_isready`
