@@ -44,7 +44,7 @@ const createArt = (request, response) => {
                     if (error) {
                         throw error;
                     }
-                    response.status(201).send(`User added with ID: ${results.insertId}`);
+                    response.status(201).send(`Art added with ID: ${results.insertId}`);
                 });
 };
 
@@ -59,7 +59,7 @@ const updateArt = (request, response) => {
             if (error) {
                 throw error;
             }
-            response.status(200).send(`User modified with ID: ${id}`);
+            response.status(200).send(`Art modified with ID: ${id}`);
         }
     );
 };
@@ -71,7 +71,7 @@ const deleteArt = (request, response) => {
         if (error) {
             throw error;
         }
-        response.status(200).send(`User deleted with ID: ${id}`);
+        response.status(200).send(`Art deleted with ID: ${id}`);
     });
 };
 
