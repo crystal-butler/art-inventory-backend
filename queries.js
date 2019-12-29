@@ -30,6 +30,7 @@ const searchArt = (request, response) => {
 
 const getArtByID = (request, response) => {
     const id = parseInt(request.params.id);
+    console.log(`ID searched is $id`);
     pool.query('SELECT * FROM arts WHERE id = $1', [id], (error, results) => {
         if (error) {
             throw error;
