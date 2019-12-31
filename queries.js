@@ -48,13 +48,15 @@ const createArt = (request, response) => {
             yearbought,
             medium }
         = request.body;
-    pool.query('INSERT INTO arts (name, price, image, artist, gallery, yearmade, yearbought, medium) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)',
+    pool.query('INSERT INTO arts (name, price, image, artist, gallery, yearmade, yearbought, medium) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING id',
                 [name, price, image, artist, gallery, yearmade, yearbought, medium],
-                (error, results) => {
+                (error, result) => {
                     if (error) {
                         throw error;
                     }
-                    response.status(201).send(`Art added with ID: ${results.insertId}`);
+                    // console.log(`New ID: " + ${id}`);
+                    // response.status(201).send(`Art added with ID: ${result.rows[0].id}`);
+                    response.status(200).json(result.rows[0]);
                 });
 };
 

@@ -1,7 +1,24 @@
-# The backend of this application is based on the tutorialS at
+# Personal Art Inventory Application
+
+## The front end of this application is based on the Angular Tour of Heroes Tutorial
+
+<https://angular.io/tutorial/toh-pt6>
+
+Some of the naming still reflects the original Tour of Heroes, which I built out and then altered.
+
+### Launch the front end development server
+
+`ng serve`n
+
+## The back end of this application is based on these tutorials
 
 <https://blog.logrocket.com/setting-up-a-restful-api-with-node-js-and-postgresql-d96d6fc892d8/>
+
 <https://medium.com/@tbrouwer/spring-boot-backend-for-angular-tour-of-heroes-106dc33a739b>
+
+### Launch the back end development server
+
+`node index.js`
 
 ## Working with postgres
 
