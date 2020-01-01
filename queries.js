@@ -48,7 +48,7 @@ const createArt = (request, response) => {
             yearbought,
             medium }
         = request.body;
-    pool.query('INSERT INTO arts (name, price, image, artist, gallery, yearmade, yearbought, medium) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING id',
+    pool.query('INSERT INTO arts (name, price, image, artist, gallery, yearmade, yearbought, medium) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING id, name',
                 [name, price, image, artist, gallery, yearmade, yearbought, medium],
                 (error, result) => {
                     if (error) {
