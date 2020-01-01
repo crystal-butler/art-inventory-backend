@@ -50,13 +50,11 @@ const createArt = (request, response) => {
         = request.body;
     pool.query('INSERT INTO arts (name, price, image, artist, gallery, yearmade, yearbought, medium) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING id, name',
                 [name, price, image, artist, gallery, yearmade, yearbought, medium],
-                (error, result) => {
+                (error, results) => {
                     if (error) {
                         throw error;
                     }
-                    // console.log(`New ID: " + ${id}`);
-                    // response.status(201).send(`Art added with ID: ${result.rows[0].id}`);
-                    response.status(200).json(result.rows[0]);
+                    response.status(200).json(results.rows[0]);
                 });
 };
 
@@ -70,7 +68,7 @@ const updateArt = (request, response) => {
             if (error) {
                 throw error;
             }
-            response.status(200).send(`Art modified with ID: ${id}`);
+            response.status(200).json(results);
         }
     );
 };
@@ -81,7 +79,7 @@ const deleteArt = (request, response) => {
         if (error) {
             throw error;
         }
-        response.status(200).send(`Art deleted with ID: ${id}`);
+        response.status(200).json(results);
     });
 };
 
