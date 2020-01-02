@@ -8,7 +8,7 @@ Some of the naming still reflects the original Tour of Heroes, which I built out
 
 ### Launch the front end development server
 
-`ng serve`n
+`ng serve`
 
 ## The back end of this application is based on these tutorials
 
