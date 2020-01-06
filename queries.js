@@ -1,11 +1,20 @@
 /*jshint esversion: 6 */
 
+// const Pool = require('pg').Pool;
+// const pool = new Pool({
+//     user: 'inventory',
+//     host: 'localhost',
+//     database: 'api',
+//     password: 'arts_2019',
+//     port: 5432
+// });
+
 const Pool = require('pg').Pool;
 const pool = new Pool({
     user: 'inventory',
-    host: 'localhost',
-    database: 'api',
-    password: 'arts_2019',
+    host: 'arts-db.ct2kspost9if.us-east-1.rds.amazonaws.com',
+    database: 'artsdb',
+    password: 'arts_inventory',
     port: 5432
 });
 

@@ -18,7 +18,7 @@ Some of the naming still reflects the original Tour of Heroes, which I built out
 
 ### Launch the back end development server
 
-`node index.js`
+`node app.js`
 
 ## Working with postgres
 
