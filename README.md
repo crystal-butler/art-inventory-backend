@@ -1,6 +1,6 @@
 # Personal Art Inventory Application
 
-## The front end of this application is based on the Angular Tour of Heroes Tutorial
+## The front end (https://github.com/crystal-butler/art-inventory-frontend) of this application is based on the Angular Tour of Heroes Tutorial
 
 <https://angular.io/tutorial/toh-pt6>
 
