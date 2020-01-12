@@ -4,7 +4,7 @@
 
 <https://angular.io/tutorial/toh-pt6>
 
-Some of the naming still reflects the original Tour of Heroes, which I built out and then altered.
+Some of the naming still reflects the original Tour of Heroes, which I built out and then altered as an exercise in learning Angular. It's a bit of a mess, but everything works.
 
 ### Launch the front end development server
 
